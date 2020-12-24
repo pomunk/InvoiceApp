@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Orders xmlns="http://www.spscommerce.com/RSX">
+	<Order>
+		<Header>
+			<OrderHeader>
+				<TradingPartnerId>Trad01</TradingPartnerId>
+				<PurchaseOrderNumber>10001</PurchaseOrderNumber>
+				<TsetPurposeCode>06</TsetPurposeCode>
+				<PurchaseOrderDate>2013-08-29</PurchaseOrderDate>
+			</OrderHeader>
+			<Dates>
+				<DateTimeQualifier>001</DateTimeQualifier>
+				<Date>2012-10-31</Date>
+			</Dates>
+			<Address>
+				<AddressTypeCode>ST</AddressTypeCode>
+				<LocationCodeQualifier>91</LocationCodeQualifier>
+				<AddressLocationNumber>5001</AddressLocationNumber>
+				<AddressName>SAP DC1</AddressName>
+				<Address1>52 Bradford St.</Address1>
+				<Address2>Suite 1000</Address2>
+				<City>Ellicott City</City>
+				<State>MD</State>
+				<PostalCode>21042</PostalCode>
+				<Country>US</Country>
+			</Address>
+			<Address>
+				<AddressTypeCode>BT</AddressTypeCode>
+				<LocationCodeQualifier>91</LocationCodeQualifier>
+				<AddressLocationNumber>5002</AddressLocationNumber>
+				<AddressName>SAP ASD</AddressName>
+				<Address1>7604 Sutor Court</Address1>
+				<City>Bayside</City>
+				<State>NY</State>
+				<PostalCode>11361</PostalCode>
+				<Country>US</Country>
+			</Address>
+			<CarrierInformation>
+				<CarrierTransMethodCode>SE</CarrierTransMethodCode>
+				<CarrierAlphaCode>UPGF</CarrierAlphaCode>
+				<CarrierRouting>UPS Ground Freight</CarrierRouting>
+				<EquipmentDescriptionCode>AC</EquipmentDescriptionCode>
+			</CarrierInformation>
+			<References>
+				<ReferenceQual>IMEI</ReferenceQual>
+				<ReferenceID>testReferenceID</ReferenceID>
+			</References>
+			<ChargesAllowances>
+				<AllowChrgIndicator>A</AllowChrgIndicator>
+				<AllowChrgCode>I410</AllowChrgCode>
+				<AllowChrgAmt>85.02</AllowChrgAmt>
+			</ChargesAllowances>
+		</Header>
+		<LineItem>
+			<OrderLine>
+				<LineSequenceNumber>1</LineSequenceNumber>
+				<BuyerPartNumber>P52U81V5C00RH</BuyerPartNumber>
+				<VendorPartNumber>V75L0HLIQS3IJ</VendorPartNumber>
+				<ConsumerPackageCode>52U81V5C00RH</ConsumerPackageCode>
+				<OrderQty>1</OrderQty>
+				<OrderQtyUOM>EA</OrderQtyUOM>
+				<PurchasePrice>4.99</PurchasePrice>
+			</OrderLine>
+		</LineItem>
+		<LineItem>
+			<OrderLine>
+				<LineSequenceNumber>2</LineSequenceNumber>
+				<BuyerPartNumber>P0GOYLXOQ80YU</BuyerPartNumber>
+				<VendorPartNumber>VPWSDO0ESOG29</VendorPartNumber>
+				<ConsumerPackageCode>98B1W1MVV68A</ConsumerPackageCode>
+				<OrderQty>2</OrderQty>
+				<OrderQtyUOM>EA</OrderQtyUOM>
+				<PurchasePrice>10.98</PurchasePrice>
+			</OrderLine>
+		</LineItem>
+		<LineItem>
+			<OrderLine>
+				<LineSequenceNumber>3</LineSequenceNumber>
+				<BuyerPartNumber>P0GOYLXOQ80YU</BuyerPartNumber>
+				<VendorPartNumber>VPWSDO0ESOG29</VendorPartNumber>
+				<ConsumerPackageCode>98B1W1MVV68A</ConsumerPackageCode>
+				<OrderQty>4</OrderQty>
+				<OrderQtyUOM>EA</OrderQtyUOM>
+				<PurchasePrice>9.99</PurchasePrice>
+			</OrderLine>
+		</LineItem>	
+		<Summary>
+			<TotalAmount>25.96</TotalAmount>
+			<TotalLineItemNumber>3</TotalLineItemNumber>
+		</Summary>
+	</Order>
+</Orders>

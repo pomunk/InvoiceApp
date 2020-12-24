@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Orders xmlns="http://www.spscommerce.com/RSX">
+	<Order>
+		<Header>
+			<OrderHeader>
+				<TradingPartnerId>Trad03</TradingPartnerId>
+				<PurchaseOrderNumber>10001</PurchaseOrderNumber>
+				<TsetPurposeCode>06</TsetPurposeCode>
+				<PurchaseOrderDate>2013-08-29</PurchaseOrderDate>
+			</OrderHeader>
+			<Dates>
+				<DateTimeQualifier>001</DateTimeQualifier>
+				<Date>2012-10-31</Date>
+			</Dates>
+			<Address>
+				<AddressTypeCode>ST</AddressTypeCode>
+				<LocationCodeQualifier>91</LocationCodeQualifier>
+				<AddressLocationNumber>5001</AddressLocationNumber>
+				<AddressName>SAP DC</AddressName>
+				<Address1>523 Bradford St.</Address1>
+				<Address2>Suite 1000</Address2>
+				<City>Ellicott City</City>
+				<State>MD</State>
+				<PostalCode>21042</PostalCode>
+				<Country>US</Country>
+			</Address>
+			<Address>
+				<AddressTypeCode>BT</AddressTypeCode>
+				<LocationCodeQualifier>91</LocationCodeQualifier>
+				<AddressLocationNumber>5002</AddressLocationNumber>
+				<AddressName>SAP DC</AddressName>
+				<Address1>76043 Sutor Court</Address1>
+				<City>Bayside</City>
+				<State>NY</State>
+				<PostalCode>11361</PostalCode>
+				<Country>US</Country>
+			</Address>
+			<CarrierInformation>
+				<CarrierTransMethodCode>SE</CarrierTransMethodCode>
+				<CarrierAlphaCode>UPGF</CarrierAlphaCode>
+				<CarrierRouting>UPS Ground Freight</CarrierRouting>
+				<EquipmentDescriptionCode>AC</EquipmentDescriptionCode>
+			</CarrierInformation>
+			<References>
+				<ReferenceQual>IMEI</ReferenceQual>
+				<ReferenceID>testReferenceID</ReferenceID>
+			</References>
+			<ChargesAllowances>
+				<AllowChrgIndicator>A</AllowChrgIndicator>
+				<AllowChrgCode>I410</AllowChrgCode>
+				<AllowChrgAmt>85.02</AllowChrgAmt>
+			</ChargesAllowances>
+		</Header>
+		<LineItem>
+			<OrderLine>
+				<LineSequenceNumber>1</LineSequenceNumber>
+				<BuyerPartNumber>P52U81V5C00RH</BuyerPartNumber>
+				<VendorPartNumber>V75L0HLIQS3IJ</VendorPartNumber>
+				<ConsumerPackageCode>52U81V5C00RH</ConsumerPackageCode>
+				<OrderQty>6</OrderQty>
+				<OrderQtyUOM>EA</OrderQtyUOM>
+				<PurchasePrice>5.09</PurchasePrice>
+			</OrderLine>
+		</LineItem>
+		<Summary>
+			<TotalAmount>30.54</TotalAmount>
+			<TotalLineItemNumber>1</TotalLineItemNumber>
+		</Summary>
+	</Order>
+</Orders>

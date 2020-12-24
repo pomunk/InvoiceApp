@@ -1,0 +1,85 @@
+﻿
+@{
+    ViewBag.Title = "Trading Partner Info";
+}
+@using InvoiceApp.Models
+@model  TradingPartner
+
+<div class="jumbotron">
+    <h1>@Model.Id</h1>
+</div>
+
+<div class="row">
+    <table id="orderList" class="orders-table">
+        <thead>
+        <tr>
+            <td>Purchase Order</td>
+            <td></td>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var po in Model.PurchaseOrders)
+        {
+            <tr>
+                <td>@po.Key</td>
+                <td>
+                    <table class="lineitem-table">
+                        <thead>
+                        <tr>
+                            <td>Line No</td>
+                            <td>Part No</td>
+                            <td>Qty</td>
+                            <td>Unit</td>
+                            <td>Price</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in po.Value)
+                            {
+                            <tr>
+                                <td>@item.OrderLine.LineSequenceNumber</td>
+                                <td>@item.OrderLine.VendorPartNumber</td>
+                                <td>@item.OrderLine.OrderQty</td>
+                                <td>@item.OrderLine.OrderQtyUOM</td>
+                                <td>@item.OrderLine.PurchasePrice</td>
+                            </tr>
+                            }
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
+
+<div class="row">
+    <table id="orderList" class="orders-table">
+        <thead>
+            <tr>
+                <td>Address Name</td>
+                <td>Address 1</td>
+                <td>Address 2</td>
+                <td>City</td>
+                <td>State</td>
+                <td>Postal Code</td>
+                <td>Country</td>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var addr in Model.Addresses)
+        {
+            <tr>
+                <td>@addr.AddressName</td>
+                <td>@addr.Address1</td>
+                <td>@addr.Address2</td>
+                <td>@addr.City</td>
+                <td>@addr.State</td>
+                <td>@addr.PostalCode</td>
+                <td>@addr.Country</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
+

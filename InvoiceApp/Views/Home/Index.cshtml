@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Orders";
+}
+@using InvoiceApp.Models
+@model SortedDictionary<string, TradingPartner>
+
+<div class="jumbotron">
+    <h1>Orders Summary</h1>
+    <p class="lead">Click on the trading partner to see details.</p>
+</div>
+
+<div class="row">
+    <table id="orderList" class="orders-table">
+        <thead>
+        <tr>
+            <td>Partner Id</td>
+            <td>Num Orders</td>
+            <td>Num Line Items</td>
+            <td>Total</td>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var key in Model.Keys)
+        {
+            var partner = Model[key];
+            <tr>
+                <td><a href="@Url.Action("Index", null, new { area = string.Empty, controller = "TradingPartner", id = key }, Request.Url.Scheme)">
+                        <span>@partner.Id</span></a></td>
+                <td>@partner.Orders.Count</td>
+                <td>@partner.NumLineItems</td>
+                <td>@partner.Total</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
